@@ -1,0 +1,4 @@
+name: local_base
+variables:
+  - name: local_base
+    value: http://127.0.0.1:8000

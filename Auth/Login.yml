@@ -1,0 +1,22 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/auth/login/"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "gateway@entertainment.com",
+        "password": "gateway123456"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
