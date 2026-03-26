@@ -1,0 +1,25 @@
+info:
+  name: Registration
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/auth/register/"
+  body:
+    type: json
+    data: |-
+      {
+        "email" : "email_1@email.com",
+        "password" : "passworxd",
+        "role" : "crew",
+        "preferred_language" : "en",
+        "full_name" : "Crew Full Name"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
