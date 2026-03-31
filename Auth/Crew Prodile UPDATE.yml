@@ -1,0 +1,37 @@
+info:
+  name: Crew Prodile UPDATE
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{local_base}}/api/v1/profiles/crew/me/"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1,
+        "user": 2,
+        "user_email": "crew1@test.com",
+        "full_name": "CR 7",
+        "phone": "",
+        "location": "Dubai",
+        "bio": "Professional stunt actor",
+        "skills": [
+          "stunts",
+          "action",
+          "film"
+        ],
+        "profile_image": null,
+        "visibility_default": "public",
+        "is_verified": false,
+        "created_at": "2026-03-07T15:55:27.126428Z",
+        "updated_at": "2026-03-09T14:53:02.652194Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
