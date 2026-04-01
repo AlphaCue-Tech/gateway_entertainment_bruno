@@ -1,0 +1,23 @@
+info:
+  name: Reels add
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/assets/reels/"
+  body:
+    type: json
+    data: |-
+      {
+        "reel_url": "https://youtube.com/watch?v=abc123",
+        "reel_platform": "youtube",
+        "label": "Showreel 2025"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

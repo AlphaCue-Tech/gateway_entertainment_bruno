@@ -1,0 +1,15 @@
+info:
+  name: Delete Certificate
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{local_base}}/api/v1/assets/certificates/8/"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

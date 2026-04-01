@@ -1,0 +1,22 @@
+info:
+  name: CV upload
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/assets/cv/"
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - C:\Users\ahxAgent007\Desktop\Drone\250008_BROOMSTICK_ARCHIVE_RELEASE_ABIR_HOSSAIN_XIAN.pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

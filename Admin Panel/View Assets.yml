@@ -1,0 +1,22 @@
+info:
+  name: View Assets
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{local_base}}/api/v1/assets/admin/assets/?asset_type=reel&status=active"
+  params:
+    - name: asset_type
+      value: reel
+      type: query
+    - name: status
+      value: active
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
