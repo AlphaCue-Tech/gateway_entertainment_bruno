@@ -14,6 +14,17 @@ http:
         "password": "gateway123456"
       }
 
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const data = res.getBody();
+
+        bru.setEnvVar("accessToken", data.access);
+        bru.setEnvVar("refreshToken", data.refresh);
+        bru.setEnvVar("userEmail", data.user.email);
+        bru.setEnvVar("userRole", data.user.role);
+
 settings:
   encodeUrl: true
   timeout: 0

@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{local_base}}/api/v1/assets/feed/reels/?cursor=42&page_size=10"
+  url: "{{local_base}}/api/v1/assets/feed/reels/?cursor=3&page_size=10"
   params:
     - name: cursor
-      value: "42"
+      value: "3"
       type: query
     - name: page_size
       value: "10"
