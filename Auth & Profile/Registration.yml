@@ -10,13 +10,13 @@ http:
     type: json
     data: |-
       {
-        "email" : "email_1@email.com",
+        "email" : "crew@email.com",
         "password" : "passworxd",
         "role" : "crew",
         "preferred_language" : "en",
-        "full_name" : "Crew Full Name"
+        "full_name" : "Crew Full Name",
+        "company_name": "AlphaCUe Technologies"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

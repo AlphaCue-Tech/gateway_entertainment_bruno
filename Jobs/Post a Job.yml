@@ -1,0 +1,26 @@
+info:
+  name: Post a Job
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/jobs/"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Camera Operator Needed 3",
+        "description": "Looking for an experienced camera operator for a 3-day commercial shoot.",
+        "location": "Dubai",
+        "job_type": "freelance",
+        "skills_required": ["camera", "lighting"],
+        "status": "open"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

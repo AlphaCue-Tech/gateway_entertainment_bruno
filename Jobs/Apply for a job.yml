@@ -1,0 +1,22 @@
+info:
+  name: Apply for a job
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{local_base}}/api/v1/jobs/2/apply/"
+  body:
+    type: json
+    data: |-
+      {
+        "cover_note": "Hi, I have 5 years of experience as a camera operator and I am available for the shoot dates.",
+        "job": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
