@@ -1,4 +1,6 @@
 name: local_base
 variables:
-  - name: local_base
+  - name: local_base1
     value: http://127.0.0.1:8000
+  - name: local_base
+    value: https://gatewayentertainment.alphacuetech.com

@@ -5,7 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{local_base}}//api/v1/jobs/"
+  url: "{{local_base}}/api/v1/jobs/?page=1&page_size=10"
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: page_size
+      value: "10"
+      type: query
   auth: inherit
 
 settings:

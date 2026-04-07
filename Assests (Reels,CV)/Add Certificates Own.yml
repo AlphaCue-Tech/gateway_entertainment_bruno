@@ -12,7 +12,7 @@ http:
       - name: file
         type: file
         value:
-          - C:\Users\ahxAgent007\Desktop\Drone\250008_BROOMSTICK_INVOICE_ABIR_HOSSAIN_XIAN.pdf
+          - C:\Users\ahxAgent007\Desktop\VISA\xian-vaccine.pdf
   auth: inherit
 
 settings:

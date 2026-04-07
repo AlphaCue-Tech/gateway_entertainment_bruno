@@ -22,8 +22,12 @@ runtime:
 
         bru.setEnvVar("accessToken", data.access);
         bru.setEnvVar("refreshToken", data.refresh);
-        bru.setEnvVar("userEmail", data.user.email);
-        bru.setEnvVar("userRole", data.user.role);
+    - type: tests
+      code: |-
+        const data = res.getBody();
+
+        bru.setEnvVar("accessToken", data.access);
+        bru.setEnvVar("refreshToken", data.refresh);
 
 settings:
   encodeUrl: true

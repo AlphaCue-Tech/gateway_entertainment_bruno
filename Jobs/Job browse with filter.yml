@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local_base}}//api/v1/jobs/?skills=camera,lighting"
+  url: "{{local_base}}/api/v1/jobs/?skills=camera,lighting"
   params:
     - name: skills
       value: camera,lighting

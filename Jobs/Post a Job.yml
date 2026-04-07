@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "title": "Camera Operator Needed 3",
+        "title": "Camera Operator Needed 2 person",
         "description": "Looking for an experienced camera operator for a 3-day commercial shoot.",
         "location": "Dubai",
         "job_type": "freelance",

@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "email" : "crew@email.com",
+        "email" : "employer@email.com",
         "password" : "passworxd",
-        "role" : "crew",
+        "role" : "employer",
         "preferred_language" : "en",
         "full_name" : "Crew Full Name",
         "company_name": "AlphaCUe Technologies"
