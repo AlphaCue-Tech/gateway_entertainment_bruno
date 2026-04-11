@@ -5,14 +5,14 @@ info:
 
 http:
   method: POST
-  url: "{{local_base}}/api/v1/assets/reels/"
+  url: "{{gateway_base}}/api/v1/assets/reels/"
   body:
     type: json
     data: |-
       {
-        "reel_url": "https://www.youtube.com/shorts/G7TfqyAxBfo",
+        "reel_url": "https://www.youtube.com/watch?v=9WEQts7b8Pw",
         "reel_platform": "youtube",
-        "label": "World’s Biggest Streamers Try Feastables"
+        "label": "video 5"
       }
   auth: inherit
 

@@ -21,7 +21,7 @@ request:
       disabled: true
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc1NTg2MTE1LCJpYXQiOjE3NzU1ODI1MTUsImp0aSI6ImVkYTU3ZjQyMTdmODQ5YjdiMzYwMzhlZTFhY2MwMzRiIiwidXNlcl9pZCI6IjciLCJlbWFpbCI6ImVtcGxveWVyQGVtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llciJ9.cVirk-7EdXVTRwRjmhPULqX8N2h-2Utx3yuQmTs1JYA
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc1OTA5ODkyLCJpYXQiOjE3NzU5MDYyOTIsImp0aSI6ImQyMzRhZTlhNmQwOTRhYTM4ZjNjZGJlMjRiZTUwOTlmIiwidXNlcl9pZCI6IjQiLCJlbWFpbCI6InhpYW5AeGlhbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.yfpITOsgntKDeEy9z4_wLKTHS-hM-7nnOYuL1nR_dDU
 bundled: false
 extensions:
   bruno:

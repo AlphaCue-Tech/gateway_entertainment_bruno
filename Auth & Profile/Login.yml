@@ -9,10 +9,20 @@ http:
   body:
     type: json
     data: |-
+      // {
+      //   "email": "crew@email.com",
+      //   "password": "passworxd"
+      // }
+
       {
-        "email": "employer@email.com",
-        "password": "passworxd"
+        "email": "xian@xian.com",
+        "password": "xian"
       }
+        
+      //   {
+      //   "email": "employer@email.com",
+      //   "password": "passworxd"
+      // }
 
 runtime:
   scripts:

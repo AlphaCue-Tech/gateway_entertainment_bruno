@@ -1,0 +1,15 @@
+info:
+  name: disable user
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{local_base}}/api/v1/admin/users/2/disable/"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

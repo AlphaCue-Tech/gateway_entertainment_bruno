@@ -1,0 +1,15 @@
+info:
+  name: re-enable user
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: "{{local_base}}/api/v1/admin/users/2/enable/"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

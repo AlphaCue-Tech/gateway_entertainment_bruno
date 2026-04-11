@@ -1,0 +1,15 @@
+info:
+  name: disable an asset
+  type: http
+  seq: 11
+
+http:
+  method: PATCH
+  url: "{{local_base}}/api/v1/admin/assets/1/disable/  "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
