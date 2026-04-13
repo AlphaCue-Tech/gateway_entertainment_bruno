@@ -15,13 +15,9 @@ config:
       bypassProxy: ""
 
 request:
-  headers:
-    - name: Bearer
-      value: "{{accessToken}}"
-      disabled: true
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc1OTA5ODkyLCJpYXQiOjE3NzU5MDYyOTIsImp0aSI6ImQyMzRhZTlhNmQwOTRhYTM4ZjNjZGJlMjRiZTUwOTlmIiwidXNlcl9pZCI6IjQiLCJlbWFpbCI6InhpYW5AeGlhbi5jb20iLCJyb2xlIjoiYWRtaW4ifQ.yfpITOsgntKDeEy9z4_wLKTHS-hM-7nnOYuL1nR_dDU
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc2MDIwOTEyLCJpYXQiOjE3NzYwMTczMTIsImp0aSI6ImFhMmVhZDc5ZWU1NDQyOTliOTQ0NDhhN2NlNzFiMDA5IiwidXNlcl9pZCI6IjkiLCJlbWFpbCI6ImNyZXdAZW1haWwuY29tIiwicm9sZSI6ImNyZXcifQ.v7-C7AK3JZiyq1NTvH7-yrv17iyuwXTQQj5roJ64DXE
 bundled: false
 extensions:
   bruno:

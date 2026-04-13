@@ -2,5 +2,5 @@ name: gateway_env
 variables:
   - name: local_base
     value: http://127.0.0.1:8000
-  - name: gateway_base
+  - name: local_base1
     value: https://gatewayentertainment.alphacuetech.com
