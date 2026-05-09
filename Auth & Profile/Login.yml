@@ -28,16 +28,10 @@ runtime:
   scripts:
     - type: after-response
       code: |-
-        const data = res.getBody();
-
-        bru.setEnvVar("accessToken", data.access);
-        bru.setEnvVar("refreshToken", data.refresh);
-    - type: tests
-      code: |-
-        const data = res.getBody();
-
-        bru.setEnvVar("accessToken", data.access);
-        bru.setEnvVar("refreshToken", data.refresh);
+        if (res.status === 200) {
+          bru.setEnvVar("accessToken", res.body.access);
+          bru.setEnvVar("refreshToken", res.body.refresh);
+        }
 
 settings:
   encodeUrl: true

@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "reel_url": "https://player.vimeo.com/video/1174298324?h=cdee74f094",
-        "reel_platform": "vimeo",
-        "label": "Vimoew embeded video link"
+        "reel_url": "https://www.youtube.com/shorts/J2swXUtbAgM",
+        "reel_platform": "youtube",
+        "label": "youtube shorts link"
       }
   auth: inherit
 

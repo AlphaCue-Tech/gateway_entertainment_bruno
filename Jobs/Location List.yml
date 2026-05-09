@@ -1,0 +1,19 @@
+info:
+  name: Location List
+  type: http
+  seq: 15
+
+http:
+  method: GET
+  url: "{{local_base}}/api/v1/locations/?country=usa"
+  params:
+    - name: country
+      value: usa
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

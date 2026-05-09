@@ -4,3 +4,5 @@ variables:
     value: http://127.0.0.1:8000
   - name: local_base1
     value: https://gatewayentertainment.alphacuetech.com
+  - name: accessToken
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc2OTgyNzAxLCJpYXQiOjE3NzY5NzkxMDEsImp0aSI6IjdmNDk4NzI2NDhhYjQ1NjA5Y2NmODY0YTBjOTZhNjE4IiwidXNlcl9pZCI6IjkiLCJlbWFpbCI6ImNyZXdAZW1haWwuY29tIiwicm9sZSI6ImNyZXcifQ.jkrs1qi0l0C6gOlIo9ppZnAs0nPi00yYQs9_XzSLr3I
