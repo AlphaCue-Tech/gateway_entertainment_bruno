@@ -4,7 +4,7 @@ info:
   seq: 3
 
 http:
-  method: GET
+  method: POST
   url: "{{local_base}}/api/v1/assets/reels/21/view/"
   auth: inherit
 
@@ -13,3 +13,44 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+
+examples:
+  - name: Reels View success
+    request:
+      url: "{{local_base}}/api/v1/assets/reels/21/view/"
+      method: POST
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: date
+          value: Sat, 09 May 2026 05:04:34 GMT
+        - name: server
+          value: WSGIServer/0.2 CPython/3.11.9
+        - name: content-type
+          value: application/json
+        - name: vary
+          value: Accept, origin
+        - name: allow
+          value: POST, OPTIONS
+        - name: x-frame-options
+          value: DENY
+        - name: content-length
+          value: "89"
+        - name: x-content-type-options
+          value: nosniff
+        - name: referrer-policy
+          value: same-origin
+        - name: cross-origin-opener-policy
+          value: same-origin
+      body:
+        type: json
+        data: |-
+          {
+            "status_code": 200,
+            "status": "success",
+            "message": "View recorded.",
+            "data": {
+              "view_count": 6
+            }
+          }
